@@ -7,7 +7,7 @@ body {
 }
 
 .main {
- color: blue;
+ 
 }
 
 .headerContainer {
@@ -28,10 +28,10 @@ body {
 .container .leftSide {
     flex: 1;
     margin-right: 40px;
-    background-color: aqua;
+    
 }
 .container .rigthSide {
     flex: 1;
-    background-color: blueviolet;
+    
     margin-left: 40px;
 }
