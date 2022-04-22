@@ -82,3 +82,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.container .rigthSide .rightBig {
+    flex: 1;
+    display: flex;
+}
