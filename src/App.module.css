@@ -51,6 +51,10 @@ body {
     outline: 0;
 }
 
+.container .leftSide input:disabled {
+    opacity: .5;
+}
+
 .container .leftSide button {
     background-color: #227C9D;
     color: #FFF;
@@ -65,9 +69,16 @@ body {
 }
 
 .container .leftSide button:hover {
-    opacity: .7;
-    background-color: rgb(68, 68, 155);
+    opacity: .9;
+    transition: all ease .7s;
+    transform: translate(0, -7%);
     
+}
+
+.container .leftSide button:disabled {
+    opacity: .5;
+    transform: translate(0, 0%);
+    background-color: rgb(122, 99, 184);
 }
 
 .container .rigthSide {
@@ -99,4 +110,105 @@ body {
     margin-left: -35px;
     margin-top: 145px;
     cursor: pointer;
+    transition: all ease 0.9s;
+}
+
+.container .rigthSide  .rightArrow:hover {
+    transform: translate(-10%, 0%);
+    transition: all ease 0.9s;
+    opacity: .9;
+}
+
+@media (max-width: 770px) {
+    .headerContainer {
+        margin-left: 20px;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    .headerContainer {
+        margin-left: 20px;
+    }
+
+    .container { 
+        flex-direction: column;
+        margin-left: 20px;       
+        padding: 0;
+    }
+
+    
+    .container .rigthSide {
+        margin-top: 40px;
+        margin-left: 0;  
+        margin-right: 20px;
+        margin-bottom: 100px;     
+    }
+
+    .container .rigthSide .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container .rigthSide  .rightArrow {
+       margin-left: 2px;
+       margin-top: 220px;
+       width: 333px;
+       border-radius: 15px;
+       height: 50px;
+       
+    }
+
+}
+
+@media (max-width: 414px) {
+    .container .rigthSide  .rightArrow {
+        width: 366px;
+    }
+
+    .headerContainer {
+        margin-left: 20px;
+    }
+
+    .container { 
+        flex-direction: column;
+        margin-left: 20px;       
+        padding: 0;
+    }
+
+        .container .rigthSide {
+        margin-top: 40px;
+        margin-left: 0;  
+        margin-right: 20px;
+        margin-bottom: 100px;     
+    }
+
+    .container .rigthSide .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container .rigthSide  .rightArrow {
+       margin-left: 2px;
+       margin-top: 270px;
+       border-radius: 15px;
+       height: 50px;
+       
+    }
+}
+
+@media (max-width: 280px) {
+    
+
+    .container .leftSide h1 {
+        font-size: 30px;
+    }
+
+    .container .rigthSide  .rightArrow {
+        width: 240px;
+    }
 }
